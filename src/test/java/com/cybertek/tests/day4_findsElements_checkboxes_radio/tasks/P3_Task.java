@@ -4,7 +4,7 @@ import com.cybertek.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class T3_Task {
+public class P3_Task {
     public static void main(String[] args) {
         /*
         TC	#2:	SeleniumEasy	CheckboxVerification–Section	1
