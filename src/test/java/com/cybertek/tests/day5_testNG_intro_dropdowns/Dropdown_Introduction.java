@@ -10,6 +10,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class Dropdown_Introduction {
@@ -49,9 +50,15 @@ public class Dropdown_Introduction {
         Assert.assertEquals(actualOption,expextedOption);
 
         select.selectByVisibleText("Option 2");
+        List<WebElement> opt= select.getOptions();
 
 
 
+        for (WebElement each :opt
+             ) {
+            System.out.println("each.getText() = " + each.getText());
+
+        }
 
 
     }
